@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Through back when</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body {
+      background: black;
+      font-size: 20px;
+      font-family: 'Shadows Into Light', cursive;
+      color: red;
+    }
+    p {
+      padding-top: 200px;
+      text-align: center;
+    }
+    .at-about-fab {
+      z-index: 999999;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      transition: 0.2s ease;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .at-about-fab:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: -58px;
+      width: 58px;
+      height: 48px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    .at-about-fab:hover {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+    .at-about-fab:hover .at-about-fab__meta {
+      opacity: 1;
+    }
+    .at-about-fab__thumbnail {
+      position: absolute;
+      top: 50%;
+      left: -58px;
+      background: black;
+      width: 48px;
+      height: 48px;
+      border: 1px solid black;
+      border-radius: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .at-about-fab__thumbnail img {
+      display: block;
+      width: 100%;
+      border-radius: 100%;
+    }
+    .at-about-fab__meta {
+      font-family: 'Open Sans', sans-serif;
+      opacity: 0;
+      transition: 0.2s ease;
+    }
+    .at-about-fab__meta h6 {
+        color: inherit;
+      font-weight: 400;
+      font-family: 'Shadows Into Light', cursive;
+      background: black;
+    }
+
+    </style>
+  </head>
+  <body>
+    <p>Through back when I <br>though red on black was cool...</p>
+    <br>
+    <p>...back in 1998!</p>
+    <div class="at-about-fab">
+    <div class="at-about-fab__thumbnail">
+      <img alt="Formatted" src="https://avatars0.githubusercontent.com/u/14853553?s=460&v=4" />
+    </div>
+    <div class="at-about-fab__meta">
+      <h6>Formatted</h6>
+    </div>
+  </div>
+  </body>
+  <script>
+      console.log('%c it sure was a long time ago...', 'background: black; color: red; display: block;');
+  </script>
+</html>
